@@ -1,0 +1,15 @@
+﻿<Application x:Class="KinectPrototype.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:KinectPrototype"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate x:Key="ProjectView">
+            <DockPanel >
+                <TextBlock Text="{Binding Date, StringFormat=Date: {0} }" Margin="10, 0, 10, 0"/>
+                <TextBlock Text="{Binding ScanNum, StringFormat=Scans: {0} }" Margin="10, 0, 10, 0"/>
+                <TextBlock Text="{Binding Points, StringFormat=Points: {0} }" Margin="10, 0, 10, 0"/>
+            </DockPanel>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
